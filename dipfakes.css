@@ -1,0 +1,393 @@
+body {
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+	font-family: system-ui;
+	background-color: #BFE5FB;
+	
+}
+
+
+main {
+	
+	max-width: 1200px;
+	margin:0 auto;
+	
+}
+
+article h1 {
+	text-align: center;
+	font-size: 70px;
+	background-color:#4f84b6;
+    color: #f1f1f1;
+	padding: 12px 80px;
+	border-radius: 80px 0;
+    text-shadow: 6px 6px 10px #000000; ;
+    box-shadow: 4px 4px 8px #000000;
+    transition: 0.7S ease-out;
+}
+
+article h1::after {
+	font-size: 70px;
+}
+
+article h1:hover {
+    background-color:#002ead;
+    transition: 0.7s;
+    border-radius: 0 80px;
+    color: #f1f1f1;
+}
+
+article h1::after {
+	content: "CYBER EDUCATION HUB"
+}
+
+article h1:hover::after {
+	content: "DIP FAKES"
+}
+
+article h2 {
+	text-align: center;
+	
+}
+
+
+form {
+	min-width:200px; /* sets search form to be big enough for textbox and button */
+}
+
+/* Set CSS for search bar as left item in menu list */
+#search {
+	list-style-type:none; /*remove bullit for list element */
+	float:right; /* float right to right side of the page*/
+	padding:15px; /* neatly add around search bar for spacing */
+	padding-right: 200px;
+	margin-top: 0;
+}
+
+/* side navigation position , background color, duration of the opening (transition) and padding */
+nav ul li {
+	height: 45%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:#132C52;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 50px;
+	box-shadow: 5px 7px 10px rgba(0, 0, 0, .8);
+}
+
+/* Styling of the links inside navigation panel and drop down button*/
+nav ul li  a, .dropdown-btn {
+	padding: 10px 10px 10px 30px;
+	text-decoration: none;
+	font-size: 20.5px;
+	color: #38B6FF;
+	display: block;
+	text-transform: capitalize;
+	transition: 0.5s ease;
+	border-radius: 0 30px;
+	margin-top: 1%;
+	background: none;
+	border: none;
+	outline: none;
+	text-align: left;
+}
+
+.dropdown-btn {
+	margin-top: -5%;
+}
+
+/* styling when hoover with the mouse over it */
+nav ul li a:hover {
+	background: #BFE5FB;
+	color: #132C52;
+	
+}
+
+nav ul .dropdown-btn:hover {
+	color: #f1f1f1;
+	transition: 0.5s ease;
+}
+
+/* styling and position of the "X" ( close button ) inside the side nav panel */
+nav ul li .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 40px;
+	margin-left: 50px;
+}
+
+/* hiding drop down menu */
+.dropdown-container {
+	display: none;
+	padding-left: 8px;
+}
+
+/* drop down icon ( triangle) positioning */
+  .fa-caret-down {
+	margin-left: 10px;
+}
+
+
+
+/* opening of the right transition and padding */
+#main {
+	transition: margin-left .8s;
+	padding: 16px;
+	margin-left: 10px;
+  
+}
+
+/* positioning on the image attached to the menu */
+#main img {
+	margin-top: -1.5%;
+}
+/* properties for the screen on different devices with max height for the bar and links inside the bar*/
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
+/*sets all margins to 0 but bottom one especially to 0 so it sits bottom browser window.
+	Need to do this for last element too */
+footer  {
+
+	position: relative;
+	left: 0;
+    bottom: 0;
+	width: 100%;
+	display:inline;
+}
+
+
+.ftr  {
+	border:0;
+	background-color:#0f0f0f ;
+	padding:18px 0 18px 15px;
+	text-align:center;
+	text-decoration: none;
+}
+
+
+/* spacing the images in footer */
+.partners img{
+	margin-right:30px;
+	margin-left: 10px;
+}
+
+/* paragraph styling in footer */
+.ftr p
+{
+	display:inline;
+	color:#f1f1f1;
+	margin-right: 70px;
+	font-size:x-large;
+	
+}
+
+/* Facebook icon styling */
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+/* Twitter Icon */
+.fa-twitter {
+	background: #55ACEE;
+	color: black;
+    font-family:sans-serif;
+}
+
+.fa.fa-twitter::before{
+	content:"𝕏";
+	font-size:1.2em;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+
+.fa-instagram {
+	background: #F95146;
+	color: white;
+}
+
+/* hoover properties this time with opacity ( icon will fade according to the set number, with "0" fully masked) */
+.fa:hover {
+	opacity: 0.7;
+}
+
+/* social media icons in the foother - styling and positioning */
+.fa {
+	padding: 10px;
+	font-size: 25px;
+	width: 1.8%;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+/* logo image at the bottom right adjustments to position */
+.ftr img {
+	margin-bottom: -1.2%;
+	margin-left: 21.5px;
+}
+
+.ftr a {
+    text-decoration: none;
+    color:#f1f1f1;
+}
+
+.ftr2 a:hover {
+    background-color: #ffffff;
+    box-shadow: 5px 7px 10px rgba(247, 244, 244, 0.8);
+    padding: 10px;
+    border-radius: 0 30px;
+    color:#000000;
+	text-decoration: none;
+}
+
+.ftr3 img{
+    align-self: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+    
+    
+}
+
+.ftr3 img:hover {
+     border-radius: 50%  ;
+    background-color: #fffbfb;
+    box-shadow: 5px 5px 8px rgb(199, 199, 206);
+
+    
+}
+
+.row {
+	display: flex;
+    width: 1200px;
+    
+}
+
+
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.column {
+	flex: 45%;
+	padding: 10px;
+
+}
+
+.container {
+	position: relative;
+	width: 100%;
+}
+ 
+	
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+	opacity: 1;
+	border-radius: 0 30px;
+	box-shadow: 8px 8px 16px #000000;
+}
+  
+.overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	width: 100%;
+	height:0;
+	transition: .5s ease;
+}
+
+.container:hover .image {
+	opacity: 0.6;
+}
+  
+.container:hover .overlay {
+	bottom: 0;
+	height: 100%;
+  }
+  
+.text {
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: left;
+	text-shadow:8px 8px 12px #333333; 
+}
+
+* {
+	box-sizing: border-box;
+ } 
+
+ .row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.column h1 {
+	text-align: center;
+}
+
+.left hr{
+    
+    color: #f1f1f1;
+    margin:0;
+}
+
+.left {
+	float: left;
+	width: 45%; 
+	padding: 0;
+	margin: 0;
+	
+ }
+
+ .right {
+	float: right;
+	width: 45%; 
+	padding: 0;
+	margin-left: 75px;
+	
+ }
+
+ .right h1{
+	text-align: left;
+	margin-top: 37px;
+ }
+
+
+
+
+ 
+
+
+

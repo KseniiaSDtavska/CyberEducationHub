@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="CEH">
+	<meta name="keywords" content="Cyber Education Hub">
+	<meta name="author" content="Team One">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" type="image/x-icon" href="images/favi.png">
+    <style>
+      /* Pop-up styling */
+      #popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #BFE5FB;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+            display: none; /* Hidden initially */
+            z-index: 1000;
+            border-radius: 0 80px;
+        }
+
+        /* Overlay background */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 999;
+        }
+
+        /* Close button */
+        #popup button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        } 
+    </style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Ventsislav Ivanov</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">1511800.00000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Ventsislav Ivanov</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
+<mso:ContentTypeId msdt:dt="string">0x01010058B61413D0A97A4AB3398FEF79BBE10B</mso:ContentTypeId>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <!-- Overlay -->
+    <div id="overlay"></div>
+
+    <!-- Pop-up message -->
+    <div id="popup">
+        <img src="images/LogoCL.png"  alt="logo">
+        <h1>Welcome to the Game Section!</h1>
+        <h2>Here you can test your Cyber Security Knowledge</h2>
+        <p>For best experience use full screen mode</p>
+        <p>To return use link at the bottom</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <div>
+        <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="FACTORY RECLAIM GAME" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/67c43fb3440a10c629f4b691" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+    </div>
+    <div>
+        <a href="Index.html">Return Home</a>
+    </div>
+    <script>
+        
+            // Show popup on page load
+        window.onload = function() {
+            document.getElementById("popup").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        };
+
+        // Function to close popup
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+        
+    </script>
+</body>
+</html>
